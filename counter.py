@@ -1,17 +1,11 @@
 print("Please enter the number of coins:")
-print("# of quarters:")
-quarters = input()
-quarters = float(quarters)
-print("# of dimes:")
-dimes = input()
-dimes = float(dimes)
-print("# of nickels:")
-nickels = input()
-nickels = float(nickels)
-print("# of pennies:")
-pennies = input()
-pennies = float(pennies)
-total = float(quarters)*.25 + float(dimes)*.10 + float(nickels)*.05 + float(pennies)*.01
-dollars = total/1.0
-cents = total % 1.0
-print("The total is" + dollars + "and" + cents + "cents")
+quarters = input("# of quarters: ")
+dimes = input("# of dimes: ")
+nickels = input("# of nickels: ")
+pennies = input("# of pennies: ")
+total = float(quarters)*25 + float(dimes)*10 + float(nickels)*5 + float(pennies)*1
+#print(total)
+dollars = round(total/100)
+cents = total % 100
+#format(cents, '2')
+print("The total is " + str(dollars) + " dollars and " + str(cents) + " cents")
