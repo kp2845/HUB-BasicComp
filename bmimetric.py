@@ -1,0 +1,5 @@
+weight = float (input("Enter your weight in kilograms: "))
+height = float (input("Enter your height in meters: "))
+BMI = weight/(height*height)
+print("BMI is {:.10f}".format(BMI))
+#print("BMI is " + str(BMI))
